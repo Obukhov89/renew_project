@@ -1,0 +1,9 @@
+.work_area {
+    grid-area: work_area;
+
+    min-width: 0;
+    height: inherit;
+    min-height: 0;
+
+    overflow: auto;
+}

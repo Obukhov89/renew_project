@@ -1,0 +1,11 @@
+.panel_content {
+    display: flex;
+}
+
+.settings_menu {
+    width: 250px;
+    height: inherit;
+    overflow-y: auto;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+}

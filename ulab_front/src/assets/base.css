@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+
+    /* sidebar | work area */
+    grid-template-columns: 280px 1fr;
+
+    /* header | content */
+    grid-template-rows: 85px 1fr;
+
+    grid-template-areas:
+        "sidebar header"
+        "sidebar work_area";
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin-right: 12px;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.left-menu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.left-menu-list {
+    height: 100%;
+    overflow: hidden;
+}
+
+.request_form {
+    position: relative;
+    margin: 1rem;
+}

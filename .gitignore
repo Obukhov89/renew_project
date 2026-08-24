@@ -1,0 +1,56 @@
+# ============================================
+# Laravel
+# ============================================
+
+ulab_app/vendor/
+ulab_app/.env
+ulab_app/.env.*
+!ulab_app/.env.example
+
+ulab_app/storage/logs/*
+ulab_app/storage/framework/cache/*
+ulab_app/storage/framework/sessions/*
+ulab_app/storage/framework/views/*
+
+ulab_app/bootstrap/cache/*
+
+# Laravel generated files
+ulab_app/public/storage
+
+
+# ============================================
+# Vue / Node
+# ============================================
+
+ulab_front/node_modules/
+ulab_front/dist/
+
+ulab_front/.env
+ulab_front/.env.*
+!ulab_front/.env.example
+
+
+.DS_Store
+Thumbs.db
+
+# ============================================
+# SQLite
+# ============================================
+
+ulab_app/database/*.sqlite
+ulab_app/database/*.sqlite-journal
+ulab_app/database/*.sqlite-wal
+
+# ============================================
+# Logs
+# ============================================
+
+*.log
+
+
+# ============================================
+# Temporary files
+# ============================================
+
+*.tmp
+*.swp

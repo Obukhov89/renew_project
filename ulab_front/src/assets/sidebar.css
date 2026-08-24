@@ -1,0 +1,18 @@
+.sidebar {
+    grid-area: sidebar;
+
+    min-width: 0;
+    overflow: hidden;
+
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    scrollbar-width: none;
+}
+
+.container.sidebar-collapsed {
+    grid-template-columns: 64px 1fr;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
