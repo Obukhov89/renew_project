@@ -4,6 +4,8 @@ import WorkArea from '../components/base/WorkArea.vue'
 import AdminPanel from '../components/admin_panel/AdminPanel.vue'
 import ModulesSettings from '../components/admin_panel/ModulesSettings.vue'
 import RequestForm from '../components/request/RequestForm.vue'
+import ConstructorForms from '../components/admin_panel/ConstructorForms.vue'
+import DynamicForm from "../components/forms/DynamicForm.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,7 +24,7 @@ const router = createRouter({
           children: [
             {
               path: "new",
-              component: RequestForm
+              component: DynamicForm
             }
           ]
         },
@@ -34,6 +36,10 @@ const router = createRouter({
             {
               path: "modules",
               component: ModulesSettings
+            },
+            {
+              path: "forms",
+              component: ConstructorForms
             }
           ]
         },

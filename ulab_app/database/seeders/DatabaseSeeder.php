@@ -19,6 +19,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PermissionSeeder::class,
             ModuleSeeder::class,
+            FormsSeeder::class,
+            SystemFieldsFormsSeeder::class,
+            SystemFormsRouteSeeder::class,
         ]);
     }
 }

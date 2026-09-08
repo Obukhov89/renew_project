@@ -11,4 +11,9 @@ class Module extends Model
     {
         return $this->belongsToMany(Module::class, 'module_permissions');
     }
+
+    public function forms()
+    {
+        return $this->hasMany(ModulesForm::class, 'module_id');
+    }
 }

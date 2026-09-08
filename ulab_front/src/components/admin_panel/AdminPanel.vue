@@ -12,6 +12,11 @@
             <v-icon color="blue-darken-4"> mdi-view-dashboard-outline </v-icon>
           </template>
         </v-list-item>
+        <v-list-item title="Конструктор форм" to="/admin/forms">
+          <template #prepend>
+            <v-icon color="blue-darken-4"> mdi-application-cog </v-icon>
+          </template>
+        </v-list-item>
       </v-list>
     </nav>
     <RouterView />
