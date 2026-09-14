@@ -14,6 +14,12 @@
       />
 
       <v-list-item
+          title="Помещения"
+          to="/room/list"
+          prepend-icon="mdi-office-building-cog-outline"
+      />
+
+      <v-list-item
         title="Настройки"
         to="/admin"
         prepend-icon="mdi-cog-outline"
@@ -21,3 +27,5 @@
     </v-list>
   </nav>
 </template>
+<script setup lang="ts">
+</script>

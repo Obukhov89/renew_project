@@ -5,7 +5,7 @@ import AdminPanel from '../components/admin_panel/AdminPanel.vue'
 import ModulesSettings from '../components/admin_panel/ModulesSettings.vue'
 import RequestForm from '../components/request/RequestForm.vue'
 import ConstructorForms from '../components/admin_panel/ConstructorForms.vue'
-import DynamicForm from "../components/forms/DynamicForm.vue";
+import Room from "../components/room/Room.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,7 +24,7 @@ const router = createRouter({
           children: [
             {
               path: "new",
-              component: DynamicForm
+              component: RequestForm
             }
           ]
         },
@@ -43,6 +43,10 @@ const router = createRouter({
             }
           ]
         },
+        {
+          path: "room/list",
+          component: Room
+        }
 
       ]
     },

@@ -13,9 +13,15 @@ class RequestModel extends Model
         'id_status',
         'email',
         'phone',
-        'contact_person',
-        'test_basis',
+        'customer',
+        'basis_contest',
         'batch_number',
-        'sample_quantity',
+        'count_probes',
+        'contact_person',
+        'custom_fields',
+    ];
+
+    protected $casts = [
+        'custom_fields' => 'array',
     ];
 }
