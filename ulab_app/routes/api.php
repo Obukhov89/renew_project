@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FormsConstructorController;
 use App\Http\Controllers\FormsController;
+use App\Http\Controllers\RoomController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,6 +16,9 @@ Route::get('/user', function (Request $request) {
 Route::post("/forms/getFields", [FormsController::class, 'getFieldsForm']);
 
 Route::post('saveRequest', [RequestController::class, 'insertUpdate']);
+
+Route::get('getRooms', [RoomController::class, 'journalRooms']);
+Route::post('saveRoom', [RoomController::class, 'save']);
 
 Route::get('/modules', [ModuleController::class, 'getRolesAndPermissions']);
 

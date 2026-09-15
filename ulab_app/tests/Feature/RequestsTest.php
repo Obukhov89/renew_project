@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use App\Models\RequestModel;
+use App\Models\Request;
 use Illuminate\Support\Facades\Schema;
 use Mockery;
 

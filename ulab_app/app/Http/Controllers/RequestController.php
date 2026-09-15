@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\RequestModel;
+use App\Models\Request;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schema;
@@ -59,7 +59,7 @@ class RequestController extends Controller
         $systemData['custom_fields'] = $customData;
 
         try {
-            $newRequest = RequestModel::create($systemData);
+            $newRequest = Request::create($systemData);
 
             return response()->json([
                 'status' => 'success',
